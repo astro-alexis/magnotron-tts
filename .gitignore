@@ -1,0 +1,17 @@
+data/*
+notebooks/.ipynb_checkpoints/*
+notebooks/luminosity*
+notebooks/*values*ipynb
+plots/*
+analysis/magnocolinses/*
+analysis/magno2/*
+analysis/vsini/*
+analysis/magn*/*pycache*
+analysis/magn*/*/*30672[6-9]*
+analysis/magn*/*/*30673[3-9]*
+analysis/magn*/*/*3067[4-9]*
+analysis/magn*/data/*.sh
+analysis/magnotron/results/*pickle
+analysis/*/plotron.py
+analysis/*/runall.*
+analysis/*/crunchycrunch*
