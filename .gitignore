@@ -5,6 +5,7 @@ notebooks/*values*ipynb
 plots/*
 analysis/magnocolinses/*
 analysis/magno2/*
+analysis/*/synth-spectra-1.h5
 analysis/vsini/*
 analysis/magn*/*pycache*
 analysis/magn*/*/*30672[6-9]*
