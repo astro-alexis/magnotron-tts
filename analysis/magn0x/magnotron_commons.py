@@ -156,7 +156,7 @@ def crunch1(inputpar,synthpath,mf,output="synth-spectra-1.h5"):
     for ipar in stellar_par.index:
         for imf in range(len(mf)):  # looping on the different magnetic field strength selected
             str_mf = '%04.1f' % mf[imf]     # converting the mf value to a flot such as 10.0, or 07.2 (4 characters including decimal point)
-            string = 'g'+stellar_par.loc[ipar,'logg']+'_'+stellar_par.loc[ipar,'teff']+'*'
+            string = 't'+stellar_par.loc[ipar,'teff']+'g'+stellar_par.loc[ipar,'logg']+'*'
             string += str_mf +'*.mout'
             if not (glob.glob(synthpath+string)):   # checking if there is a synthetic spectra with the right filename
                 print("ERROR: FILE NOT FOUND {}".format(string))

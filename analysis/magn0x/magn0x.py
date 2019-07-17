@@ -106,8 +106,14 @@ outputpar.loc[iobs, ('scale')], outputpar.loc[iobs, ('chisquare')]  = scale[wbes
 txtf = 'results/'+file_prefix+str(inputpar.loc[iobs,('uuid')])+'-'+str(inputpar.loc[iobs,('star')])+'.ascii'    # creating the filename for the ascii output file with spectra
 np.savetxt(txtf,np.transpose([wave[:],obs[:], spec, spec0]), fmt='%1.5f')    # saving the ascii output file
 print('[info] done with the analysis. <B> = [{:.2f},{:1.2f},{:1.2f}] kG. chi2 = {:1.2f}'.format(modB[0],modB[1],modB[2],chi[wbest]/dofl))   # little print with results
-logf = open('results/'+file_prefix+'magn0x.log',"a")
-outstring = str(inputpar.loc[iobs,('uuid')]) + (f"\t") + str(inputpar.loc[iobs,('star')])
-outstring += (f"\t{modB[0]:.2f}") + (f" ({chi[wbest]/dofl:.2f})\n")
-logf.write(outstring)
-logf.close()
+#logf = open('results/'+file_prefix+'magn0x.log',"a")
+#outstring = str(inputpar.loc[iobs,('uuid')]) + (f"\t") + str(inputpar.loc[iobs,('star')])
+#outstring += (f"\t{modB[0]:.2f}") + (f" ({chi[wbest]/dofl:.2f})\n")
+#logf.write(outstring)
+#logf.close()
+
+outputfilename = 'results/'+file_prefix+'log_{}'.format(inputpar.loc[iobs,'uuid'])
+f= open(outputfilename,"w")
+f.write('bmin\tbbest\tbmax\tchi2\n')
+f.write('{:.3f}\t{:.3f}\t{:.3f}\t{:.3f}\n'.format(modB[1],modB[0],modB[2],chi[wbest]/dofl))
+f.close()
