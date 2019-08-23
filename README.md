@@ -29,6 +29,7 @@ I include in this repository the 3 reduced observations of TW Hya, so that the a
 The input observation to each code are the same dataset of reduced, telluric-removed, normalized CRIRES high-resolution near-infrared spectra, which are within the **data** subfolders. Each **.ascii** spectrum file is a 2-columns file with:
 * wavelength in Å
 * normalized intensity
+
 The data for the observation of TW Hya are included in this repository.
 
 #### ./analysis/magn0x
@@ -52,7 +53,7 @@ with the format [OBS ID] [STAR ID] [B in kG] [(chi^2)]
 Exact same thing than `magn0x` but with 2 magnetic components
 
 #### ./analysis/magnotron
-`magnotron.py` (models 3--4) performs a data-driver MCMC fitting of the observed spectrum. The code starts with the simplest magnetic model (0,2 kG) and fits the spectrum and computes the Akaike Information Criterion (AIC). Then, iteratively, more components are added (4,6,8,10,12, and ultimately 14 kG) and the process is repeated. The model favoured by the data is the model yielding the smallest AIC. **If you want to run magnotron on your computer, make sure that you change the** `ncpu` **variable to the number of CPUs available on your machine**.
+`magnotron.py` (models 3--4) performs a MCMC fitting of the observed spectrum. The code starts with the simplest magnetic model (0,2 kG) and fits the spectrum and computes the Bayesian Information Criterion (bIC). Then, iteratively, more components are added (4,6,8,10,12, and ultimately 14 kG) and the process is repeated. The model favoured by the data is the model yielding the smallest BIC. **If you want to run magnotron on your computer, make sure that you change the** `ncpu` **variable to the number of CPUs available on your machine**.
 
 `magnotron.py` is run with one argument (integer) which specifies which spectrum shall be input. `bash runall.sh` runs the code on all input spectra.
 
