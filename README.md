@@ -1,9 +1,9 @@
 # magnotron2019
-Code, data, and plots for the publication: *Characterizing the surface magnetic fields of T Tauri stars with high-resolution near-infrared spectroscopy.*
+Code, data, and plots for the publication: Characterising the surface magnetic fields of T Tauri stars with high-resolution near-infrared spectroscopy. [ADS](https://ui.adsabs.harvard.edu/abs/2019arXiv190904965L/abstract), [arXiv](https://arxiv.org/abs/1909.04965), [DOI](https://doi.org/10.1051/0004-6361/201935695).
 
 The content of this repository is licensed under MIT license (see the included **LICENSE**).
 
-This code comes with no warranty whatsoever and you might find it poorly written. You are very welcome to email [alexis.lavail@physics.uu.se](mailto:alexis.lavail@physics.uu.se) if you have questions, but keep in mind that I will not guarantee any assistance if you experience problems installing or running this code.
+This code comes with no warranty whatsoever and you may find it poorly written. You are very welcome to email [alexis.lavail@physics.uu.se](mailto:alexis.lavail@physics.uu.se) if you have questions, but keep in mind that I will not guarantee assistance if you experience problems installing or running this code.
 
 ## What you need
 Here are listed the python packages needed to run the python scripts, and their version as output by `pipreqs`.
