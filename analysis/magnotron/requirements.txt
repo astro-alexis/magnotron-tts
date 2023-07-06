@@ -1,6 +1,6 @@
 numpy==1.14.3
 corner==2.0.1
-scipy==1.1.0
+scipy==1.10.0
 h5py==2.8.0
 matplotlib==2.2.2
 pandas==0.23.0
