@@ -3,7 +3,7 @@ Code, data, and plots for the publication: Characterising the surface magnetic f
 
 The content of this repository is licensed under MIT license (see the included **LICENSE**).
 
-This code comes with no warranty whatsoever and you may find it poorly written. You are very welcome to email [alexis.lavail@physics.uu.se](mailto:alexis.lavail@physics.uu.se) if you have questions, but keep in mind that I will not guarantee assistance if you experience problems installing or running this code.
+This code comes with no warranty whatsoever and you may find it poorly written. You are very welcome to email [astro@lavail.net](astro@lavail.net) if you have questions, but keep in mind that I will not guarantee assistance if you experience problems installing or running this code.
 
 ## What you need
 Here are listed the python packages needed to run the python scripts, and their version as output by `pipreqs`.
